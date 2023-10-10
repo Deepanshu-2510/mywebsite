@@ -2,18 +2,43 @@
     margin: 0;
     padding: 0;
     font-family: poppins;
+    box-sizing: border-box;
+}
+
+body {
     background: linear-gradient(90deg,rgb(72, 198, 248),rgb(154, 189, 255));
 }
 
-#main-heading {
-    display: inline-block;
+.container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#main-heading h1{
+    font-size: 3rem;
+    color: blue;
+    box-shadow: 2px 2px 5px #000;
+    margin: 20px;
 }
 
 #navbar {
     display: flex;
-    
+    position: absolute;
+    right: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    background: none;
 }
 
 #navbar ul a {
     text-decoration: none;
+}
+
+#my-image {
+    height: 200px;
+    border-radius: 50%  ;
+    box-shadow: 2px 2px 5px #000;
 }
