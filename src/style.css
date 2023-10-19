@@ -4,7 +4,8 @@
 }
 
 body {
-    background: linear-gradient(90deg,rgb(54, 204, 241),rgb(241, 155, 241));
+    /* background: linear-gradient(90deg,rgb(54, 204, 241),rgb(241, 155, 241)); */
+    background-color: #9999ff;
     overflow: hidden;
     font-family: poppins;
 }
