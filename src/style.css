@@ -52,21 +52,13 @@ nav {
     border-radius: 6px;
 }
 
-main {
+.first_section {
     display: flex;
+    justify-content: space-around;
 }
 
 #my-image {
-    width: 15%;
+    width: 20rem;
     border-radius: 50%;
-    position: relative;
-    left: 300px;
-    top: 200px;
-    box-shadow: 1px 1px 10px #000;
-}
-
-#main-content {
-    position: relative;
-    top: 200px;
-    right: 400px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.205);
 }
