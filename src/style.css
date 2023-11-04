@@ -11,7 +11,9 @@
 }
 body {
     font-family: var(--font);
-    background-color: #A0E9FF;
+    background: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 header {
@@ -19,7 +21,7 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #00A9FF;
+    /* background-color: #00A9FF; */
     height: 80px;
 }
 .logo {
@@ -50,6 +52,9 @@ header {
     text-decoration: none;
     text-shadow: 1px 1px 10px var(--text-shadow);
     font-size: 1.2rem;
+}
+svg{
+    position: absolute;   
 }
 .section-1 {
     display: flex;
@@ -91,6 +96,7 @@ header {
     text-shadow: 1px 1px 10px var(--text-shadow);
     font-size: 3rem;
 }
+
 .section-2 {
     /* height: 30vh; */
     margin: 100px 0;
@@ -112,9 +118,10 @@ header {
     color: var(--main-color);
     font-size: 1.4rem;
 }
+
 footer .footer{
     height: 10vh;
-    background-color: aqua;
+    background-color: rgba(0, 153, 255, 0.164);
     display: flex;
     justify-content: center;
     align-items: center;
