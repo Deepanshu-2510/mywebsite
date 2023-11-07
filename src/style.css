@@ -39,6 +39,11 @@ header {
     text-shadow: 1px 1px 10px var(--text-shadow);
     font-size: 1.9rem;
     cursor: pointer;
+    transition: .2s;
+}
+.logo h3:hover {
+    color: red;
+    text-decoration: underline;
 }
 .navbar ul {
     display: flex;
@@ -52,9 +57,13 @@ header {
     text-decoration: none;
     text-shadow: 1px 1px 10px var(--text-shadow);
     font-size: 1.2rem;
+    transition: .2s;
 }
-svg{
-    position: absolute;   
+.navbar ul li a::before {
+    content: '';
+}
+.navbar ul li a:hover {
+    color: #ccc;
 }
 .section-1 {
     display: flex;
@@ -64,20 +73,15 @@ svg{
     top: 100px; */
     margin: 100px 0;
 }
-.section-1 .right {
-    width: 30vw;
-    height: 60vh;
+.section-1 .right img{
+    width: 20vw;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 1px 1px 10px var(--text-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .section-1 .left {
     width: 30vw;
-    height: 60vh;
+    height: 30vh;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -86,15 +90,11 @@ svg{
     justify-content: center;
     align-items: center;
 }
-.section-1 .right h2 {
+.section-1 .left p {
     color: var(--main-color);
     text-shadow: 1px 1px 10px var(--text-shadow);
     font-size: 3rem;
-}
-.section-1 .left h2 {
-    color: var(--main-color);
-    text-shadow: 1px 1px 10px var(--text-shadow);
-    font-size: 3rem;
+    cursor: default;
 }
 
 .section-2 {
@@ -118,9 +118,18 @@ svg{
     color: var(--main-color);
     font-size: 1.4rem;
 }
-
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+.fixed svg {
+    fill: #0A66C2;
+    /* background-color: #fff; */
+    filter:drop-shadow(1px 1px 5px #000);
+}
 footer .footer{
-    height: 10vh;
+    /* height: 5rem; */
     background-color: rgba(0, 153, 255, 0.164);
     display: flex;
     justify-content: center;
