@@ -129,8 +129,9 @@ header {
     filter:drop-shadow(1px 1px 5px #000);
 }
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
+    width: 100%; 
 }
 footer .footer{
     /* height: 5rem; */
